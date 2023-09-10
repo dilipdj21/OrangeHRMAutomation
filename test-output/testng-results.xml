@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="5" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-10T21:41:59 IST" name="OrangeHRM Test Suite" finished-at="2023-09-10T21:45:58 IST" duration-ms="239233">
+    <groups>
+    </groups>
+    <test started-at="2023-09-10T21:41:59 IST" name="OrangeHRM Test" finished-at="2023-09-10T21:45:58 IST" duration-ms="239233">
+      <class name="com.orangeHRM.qa.testcases.DependentsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangeHRM.qa.testcases.DependentsTest@54422e18]" started-at="2023-09-10T21:42:21 IST" name="setup" finished-at="2023-09-10T21:42:45 IST" duration-ms="24531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddValidDependantAndAttachment()[pri:1, instance:com.orangeHRM.qa.testcases.DependentsTest@54422e18]" started-at="2023-09-10T21:42:45 IST" name="AddValidDependantAndAttachment" finished-at="2023-09-10T21:42:55 IST" duration-ms="10062" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='tablist']//div[4]"}
+  (Session info: chrome=116.0.5845.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0b4a810c570e6dc2766918c741580fd, findElement {using=xpath, value=//div[@role='tablist']//div[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.179, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/wn/z0j2v1rj00l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60179}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60179/devtoo..., se:cdpVersion: 116.0.5845.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0b4a810c570e6dc2766918c741580fd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='tablist']//div[4]"}
+  (Session info: chrome=116.0.5845.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0b4a810c570e6dc2766918c741580fd, findElement {using=xpath, value=//div[@role='tablist']//div[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.179, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/wn/z0j2v1rj00l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60179}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60179/devtoo..., se:cdpVersion: 116.0.5845.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0b4a810c570e6dc2766918c741580fd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.orangeHRM.qa.pages.DependentsPage.clickOnDependentsButton(DependentsPage.java:51)
+at com.orangeHRM.qa.testcases.DependentsTest.AddValidDependantAndAttachment(DependentsTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddValidDependantAndAttachment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testcases.DependentsTest@54422e18]" started-at="2023-09-10T21:42:56 IST" name="tearDown" finished-at="2023-09-10T21:42:56 IST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangeHRM.qa.testcases.DependentsTest -->
+      <class name="com.orangeHRM.qa.testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:42:56 IST" name="setup" finished-at="2023-09-10T21:43:24 IST" duration-ms="27430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginwithValidCredentialsWithExcel(java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:43:24 IST" name="verifyLoginwithValidCredentialsWithExcel" data-provider="validCredentialSupplier" finished-at="2023-09-10T21:43:34 IST" duration-ms="10153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithValidCredentialsWithExcel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:43:34 IST" name="tearDown" finished-at="2023-09-10T21:43:34 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:43:34 IST" name="setup" finished-at="2023-09-10T21:44:11 IST" duration-ms="37279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginwithValidCredentialsWithExcel(java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:44:11 IST" name="verifyLoginwithValidCredentialsWithExcel" data-provider="validCredentialSupplier" finished-at="2023-09-10T21:44:15 IST" duration-ms="3475" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithValidCredentialsWithExcel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:44:15 IST" name="tearDown" finished-at="2023-09-10T21:44:15 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:44:15 IST" name="setup" finished-at="2023-09-10T21:44:42 IST" duration-ms="27039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginwithValidCredentialsWithExcel(java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:44:42 IST" name="verifyLoginwithValidCredentialsWithExcel" data-provider="validCredentialSupplier" finished-at="2023-09-10T21:44:48 IST" duration-ms="6220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithValidCredentialsWithExcel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:44:48 IST" name="tearDown" finished-at="2023-09-10T21:44:48 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:44:48 IST" name="setup" finished-at="2023-09-10T21:45:17 IST" duration-ms="29034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginwithValidCredentialsWithExcel(java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:45:17 IST" name="verifyLoginwithValidCredentialsWithExcel" data-provider="validCredentialSupplier" finished-at="2023-09-10T21:45:28 IST" duration-ms="11051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithValidCredentialsWithExcel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testcases.LoginTest@117159c0]" started-at="2023-09-10T21:45:28 IST" name="tearDown" finished-at="2023-09-10T21:45:29 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangeHRM.qa.testcases.LoginTest -->
+      <class name="com.orangeHRM.qa.testcases.EmergencyContactsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangeHRM.qa.testcases.EmergencyContactsTest@e350b40]" started-at="2023-09-10T21:41:59 IST" name="setup" finished-at="2023-09-10T21:42:21 IST" duration-ms="21589" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space" data-v-10d463b7="" data-v-7fe2d320="">...</button> is not clickable at point (1309, 489). Other element would receive the click: <div class="oxd-form-loader" data-v-d5bfe35b="">...</div>
+  (Session info: chrome=116.0.5845.179)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41da8ac4e3f3022d4d73556430348266, clickElement {id=82175D7D813C66B29C401139999CB946_element_61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.179, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/wn/z0j2v1rj00l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60160}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60160/devtoo..., se:cdpVersion: 116.0.5845.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (41da8ac4e3f3022d4d73556430348266)] -> xpath: //button[@type='submit']]
+Session ID: 41da8ac4e3f3022d4d73556430348266]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space" data-v-10d463b7="" data-v-7fe2d320="">...</button> is not clickable at point (1309, 489). Other element would receive the click: <div class="oxd-form-loader" data-v-d5bfe35b="">...</div>
+  (Session info: chrome=116.0.5845.179)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41da8ac4e3f3022d4d73556430348266, clickElement {id=82175D7D813C66B29C401139999CB946_element_61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.179, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/wn/z0j2v1rj00l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60160}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60160/devtoo..., se:cdpVersion: 116.0.5845.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (41da8ac4e3f3022d4d73556430348266)] -> xpath: //button[@type='submit']]
+Session ID: 41da8ac4e3f3022d4d73556430348266
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.orangeHRM.qa.pages.AddEmployeePage.savebutton(AddEmployeePage.java:53)
+at com.orangeHRM.qa.testcases.EmergencyContactsTest.setup(EmergencyContactsTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddValidEmergencyContactAndAttachment()[pri:1, instance:com.orangeHRM.qa.testcases.EmergencyContactsTest@e350b40]" started-at="2023-09-10T21:42:21 IST" name="AddValidEmergencyContactAndAttachment" finished-at="2023-09-10T21:42:21 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space" data-v-10d463b7="" data-v-7fe2d320="">...</button> is not clickable at point (1309, 489). Other element would receive the click: <div class="oxd-form-loader" data-v-d5bfe35b="">...</div>
+  (Session info: chrome=116.0.5845.179)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41da8ac4e3f3022d4d73556430348266, clickElement {id=82175D7D813C66B29C401139999CB946_element_61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.179, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/wn/z0j2v1rj00l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60160}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60160/devtoo..., se:cdpVersion: 116.0.5845.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (41da8ac4e3f3022d4d73556430348266)] -> xpath: //button[@type='submit']]
+Session ID: 41da8ac4e3f3022d4d73556430348266]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space" data-v-10d463b7="" data-v-7fe2d320="">...</button> is not clickable at point (1309, 489). Other element would receive the click: <div class="oxd-form-loader" data-v-d5bfe35b="">...</div>
+  (Session info: chrome=116.0.5845.179)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41da8ac4e3f3022d4d73556430348266, clickElement {id=82175D7D813C66B29C401139999CB946_element_61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.179, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/wn/z0j2v1rj00l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60160}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60160/devtoo..., se:cdpVersion: 116.0.5845.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (41da8ac4e3f3022d4d73556430348266)] -> xpath: //button[@type='submit']]
+Session ID: 41da8ac4e3f3022d4d73556430348266
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.orangeHRM.qa.pages.AddEmployeePage.savebutton(AddEmployeePage.java:53)
+at com.orangeHRM.qa.testcases.EmergencyContactsTest.setup(EmergencyContactsTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddValidEmergencyContactAndAttachment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testcases.EmergencyContactsTest@e350b40]" started-at="2023-09-10T21:42:21 IST" name="tearDown" finished-at="2023-09-10T21:42:21 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangeHRM.qa.testcases.EmergencyContactsTest -->
+      <class name="com.orangeHRM.qa.testcases.AddEmployeeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangeHRM.qa.testcases.AddEmployeeTest@3e27ba32]" started-at="2023-09-10T21:45:29 IST" name="setup" finished-at="2023-09-10T21:45:52 IST" duration-ms="23785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterAddEmployeeDetails()[pri:1, instance:com.orangeHRM.qa.testcases.AddEmployeeTest@3e27ba32]" started-at="2023-09-10T21:45:52 IST" name="enterAddEmployeeDetails" finished-at="2023-09-10T21:45:58 IST" duration-ms="5584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterAddEmployeeDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testcases.AddEmployeeTest@3e27ba32]" started-at="2023-09-10T21:45:58 IST" name="tearDown" finished-at="2023-09-10T21:45:58 IST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangeHRM.qa.testcases.AddEmployeeTest -->
+    </test> <!-- OrangeHRM Test -->
+  </suite> <!-- OrangeHRM Test Suite -->
+</testng-results>

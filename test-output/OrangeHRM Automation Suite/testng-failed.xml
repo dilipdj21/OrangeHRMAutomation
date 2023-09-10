@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="OrangeHRM Tests(failed)">
+    <classes>
+      <class name="com.orangeHRM.qa.testcases.DependentsTest">
+        <methods>
+          <include name="AddValidDependantAndAttachment"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.orangeHRM.qa.testcases.DependentsTest -->
+      <class name="com.orangeHRM.qa.testcases.LoginTest">
+        <methods>
+          <include name="verifyLoginwithValidCredentials"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.orangeHRM.qa.testcases.LoginTest -->
+      <class name="com.orangeHRM.qa.testcases.AddEmployeeTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="enterAddEmployeeDetails"/>
+        </methods>
+      </class> <!-- com.orangeHRM.qa.testcases.AddEmployeeTest -->
+      <class name="com.orangeHRM.qa.testcases.EmergencyContactsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="AddValidEmergencyContactAndAttachment"/>
+        </methods>
+      </class> <!-- com.orangeHRM.qa.testcases.EmergencyContactsTest -->
+    </classes>
+  </test> <!-- OrangeHRM Tests(failed) -->
+</suite> <!-- Failed suite [OrangeHRM Automation Suite] -->
